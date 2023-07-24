@@ -20,7 +20,6 @@ loop:
   add t4, t1, t2
   addi t0, t0, 12
   beq t3, t4, loop        # check if sum is correct
-  j fail
 
 test_end:
 
@@ -41,5 +40,8 @@ test_cases:
   .word 0xcafe
   .word 0x1
   .word 0xcaff
+  .word 0x01
+  .word 0x01
+  .word 0x03
 
 RVTEST_DATA_END
